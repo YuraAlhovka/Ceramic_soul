@@ -1,6 +1,6 @@
 @use "/src/sass/base/variables.scss" as *;
 
-.git {
+.touch {
   padding-top: 60px;
   &__wrapper {
     margin-top: 60px;
@@ -14,7 +14,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .git {
+  .touch {
     &__wrapper {
       margin-top: 45px;
     }
@@ -24,7 +24,7 @@
   }
 }
 @media screen and (min-width: 1200px) {
-  .git {
+  .touch {
     &__wrapper {
       margin-top: 80px;
     }
@@ -35,7 +35,7 @@
 }
 
 @media screen and (min-width: 1920px) {
-  .git {
+  .touch {
     padding-top: 100px;
   }
 }
