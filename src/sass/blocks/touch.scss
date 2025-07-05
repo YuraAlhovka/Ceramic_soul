@@ -87,9 +87,11 @@
 
 @media screen and (min-width: 768px) {
   .touch {
-    position: relative;
     &__input {
       width: 300px;
+    }
+    form {
+      position: relative;
     }
     &__wrapper {
       margin-top: 45px;
@@ -112,14 +114,18 @@
     }
     &__tea {
       display: block;
-      padding-right: 20px;
+      width: 550px;
+      height: 342px;
+      box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+      object-fit: cover;
     }
     form {
       padding-left: 20px;
     }
     &__input {
       &:hover {
-        border: 1px solid $dark;
+        outline: 1px solid $dark;
+        border: none;
       }
     }
   }
@@ -129,10 +135,12 @@
   .touch {
     padding-top: 100px;
     &__tea {
-      padding-right: 73px;
+      width: 100%;
+      height: 356px;
     }
     form {
-      padding-left: 73px;
+      width: auto;
+      padding-left: 143px;
     }
     fieldset {
       display: flex;
@@ -140,6 +148,9 @@
     }
     &__btn {
       margin-bottom: 4px;
+    }
+    &__vase {
+      right: 75px;
     }
   }
 }
