@@ -1,0 +1,41 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.git {
+  padding-top: 60px;
+  &__wrapper {
+    margin-top: 60px;
+  }
+  &__tea {
+    display: none;
+  }
+  &__vase {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .git {
+    &__wrapper {
+      margin-top: 45px;
+    }
+    &__vase {
+      display: block;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .git {
+    &__wrapper {
+      margin-top: 80px;
+    }
+    &__tea {
+      display: block;
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .git {
+    padding-top: 100px;
+  }
+}
