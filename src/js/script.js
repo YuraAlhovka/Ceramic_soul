@@ -1,5 +1,6 @@
 import Swiper from "swiper";
 import { Navigation, Pagination } from "swiper/modules";
+import JustValidate from "just-validate";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -64,4 +65,92 @@ try {
 
   // Показываем первый контент при загрузке
   contents.forEach((c, i) => (c.style.display = i === 0 ? "flex" : "none"));
+} catch (e) {}
+
+try {
+  const validateTouch = new JustValidate(".touch__form");
+  validateTouch
+    .addField("#name", [
+      {
+        rule: "required",
+      },
+      {
+        rule: "minLength",
+        value: 2,
+      },
+    ])
+    .addField("#email", [
+      {
+        rule: "required",
+      },
+      {
+        rule: "email",
+      },
+    ])
+    .addField(
+      "#question",
+      [
+        {
+          rule: "required",
+        },
+        {
+          rule: "minLength",
+          value: 5,
+        },
+      ],
+      {
+        errorsContainer: document
+          .querySelector("#question")
+          .parentElement.querySelector(".error-message"),
+      }
+    )
+    .addField(
+      "#checkbox",
+      [
+        {
+          rule: "required",
+        },
+      ],
+      {
+        errorsContainer: document
+          .querySelector("#checkbox")
+          .parentElement.parentElement.querySelector(".checkbox-error-message"),
+      }
+    );
+} catch (e) {}
+
+try {
+  const validateFooter = new JustValidate(".footer__form");
+  validateFooter
+
+    .addField(
+      "#email_footer",
+      [
+        {
+          rule: "required",
+        },
+        {
+          rule: "email",
+        },
+      ],
+      {
+        errorsContainer: document
+          .querySelector("#email_footer")
+          .parentElement.querySelector(".error-message"),
+      }
+    )
+
+    .addField(
+      "#checkbox_footer",
+      [
+        {
+          rule: "required",
+        },
+      ],
+      {
+        errorsContainer: document
+          .querySelector("#checkbox_footer")
+          .parentElement.parentElement.querySelector(".checkbox-error-message"),
+      }
+    );
 } catch (e) {}

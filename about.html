@@ -79,7 +79,7 @@
           </div>
 
           <div class="pure-u-1 pure-u-xl-1-2 pure-u-xxl-3-5">
-            <form action="#">
+            <form action="#" class="touch__form">
               <fieldset>
                 <div class="touch__input-block">
                   <label for="name" class="touch__label">Name</label>
@@ -112,15 +112,18 @@
                 required
                 class="touch__textarea"
               ></textarea>
+              <div class="error-message"></div>
               <label for="checkbox" class="touch__label touch__check-block">
                 <input
                   type="checkbox"
                   name="checkbox"
+                  id="checkbox"
                   class="touch__checkbox"
                   required
                 />
                 I agree with the <a href="#">terms</a>
               </label>
+              <div class="checkbox-error-message"></div>
               <button class="btn-send touch__btn">send request</button>
               <img
                 src="/src/img/form/vase.png"
@@ -154,25 +157,28 @@
             <div class="footer__text">
               Keep up to date with news and promotions
             </div>
-            <form action="#">
+            <form action="#" class="footer__form">
               <input
                 type="email"
-                id="email"
+                id="email_footer"
                 name="email"
                 placeholder="Enter your e-mail"
                 class="footer__input"
                 required
               />
+              <div class="error-message"></div>
               <div class="footer__divider"></div>
               <label for="checkbox" class="footer__label footer__check-block">
                 <input
                   type="checkbox"
                   name="checkbox"
+                  id="checkbox_footer"
                   class="footer__checkbox"
                   required
                 />
                 I agree with the <a href="#">terms</a>
               </label>
+              <div class="checkbox-error-message"></div>
               <button class="btn-submit footer__btn">submit</button>
             </form>
           </div>

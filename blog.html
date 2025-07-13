@@ -104,25 +104,28 @@
             <div class="footer__text">
               Keep up to date with news and promotions
             </div>
-            <form action="#">
+            <form action="#" class="footer__form">
               <input
                 type="email"
-                id="email"
+                id="email_footer"
                 name="email"
                 placeholder="Enter your e-mail"
                 class="footer__input"
                 required
               />
+              <div class="error-message"></div>
               <div class="footer__divider"></div>
               <label for="checkbox" class="footer__label footer__check-block">
                 <input
                   type="checkbox"
                   name="checkbox"
+                  id="checkbox_footer"
                   class="footer__checkbox"
                   required
                 />
                 I agree with the <a href="#">terms</a>
               </label>
+              <div class="checkbox-error-message"></div>
               <button class="btn-submit footer__btn">submit</button>
             </form>
           </div>
