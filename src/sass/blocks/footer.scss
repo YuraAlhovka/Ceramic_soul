@@ -5,7 +5,13 @@
   background-color: $dark;
   padding-top: 50px;
   padding-bottom: 50px;
-
+  .just-validate-error-field {
+    border-bottom: 1px solid $ui-error;
+    outline: transparent;
+    &::placeholder {
+      color: $ui-error;
+    }
+  }
   &__header {
     color: $light;
     font-size: 16px;
