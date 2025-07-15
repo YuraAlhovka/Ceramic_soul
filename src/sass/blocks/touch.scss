@@ -1,4 +1,5 @@
 @use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/animation.scss" as *;
 
 .touch {
   padding-top: 60px;
@@ -17,6 +18,7 @@
   }
   &__vase {
     display: none;
+    animation: moveAndRotate 4s linear infinite;
   }
   fieldset {
     border: none;
