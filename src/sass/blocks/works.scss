@@ -2,8 +2,13 @@
 
 .works {
   padding-top: 60px;
+  padding-bottom: 35px;
+  position: relative;
   &__slider {
     margin-top: 40px;
+  }
+  .works__slider-nav {
+    display: none;
   }
   .swiper-slide img {
     width: 100%;
@@ -13,7 +18,7 @@
     display: none;
   }
   .swiper-pagination {
-    bottom: -35px;
+    bottom: -7px;
   }
   .swiper-pagination-bullet {
     width: 10px;
